@@ -1,0 +1,31 @@
+{
+  "name": "alloc",
+  "version": "1.0.0",
+  "description": "Social Media App",
+  "main": "app.mjs",
+  "scripts": {
+    "once" : "node --experimental-modules app.mjs",
+    "start" : "nodemon --experimental-modules app.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ph0enixKM/Alloc.git"
+  },
+  "keywords": [
+    "Alloc",
+    "social",
+    "media"
+  ],
+  "author": "Alloc Dev Team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ph0enixKM/Alloc/issues"
+  },
+  "homepage": "https://github.com/Ph0enixKM/Alloc#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.9",
+    "express": "^4.16.3",
+    "nodemon" : "*"
+  }
+}
