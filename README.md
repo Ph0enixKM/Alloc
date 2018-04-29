@@ -7,7 +7,7 @@
 First init the project
 
 ```bash
-$ git clone
+$ git clone https://github.com/Ph0enixKM/Alloc.git
 ```
 
 Next install all the dependencies
