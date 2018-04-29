@@ -17,6 +17,7 @@ app.get("/chat", (req, res) => {
 app.get("/dashboard", (req, res) => {
   res.render('dashboard')
 })
+app.use(express.static(process.cwd() + '/public'))
 
 // Listen to port 8000
 app.listen(8000, () => console.log("Server started on port 8000"))
