@@ -1,3 +1,7 @@
+<div align="center">
+<img src="public/arts/logoLight.png">
+</div>
+
 ## Alloc setup
 
 First init the project
