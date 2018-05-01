@@ -1,3 +1,30 @@
 textarea{
   resize: none;
+  border-color: #AAA;
+  border-style: solid;
+  border-width: thin;
+  width: 100%;
+}
+div.content{
+  height: 450px;
+  width: 100%;
+  border: solid 1px;
+  background: grey;
+}
+div#container{
+  border: solid 1px;
+  width: 100%;
+  background: orange;
+}
+h1{
+  text-align: center;
+  width: 200px
+  float: center;
+}
+div#back{
+  width: 100px;
+  float: left
+}
+a{
+  text-decoration: none;
 }
