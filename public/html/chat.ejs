@@ -7,11 +7,17 @@
   </head>
   <body>
     <div id="container">
-      <div id="back"><a href=http://localhost:8000>Back</a>
-      </div>
-      <div id="alloc">
-      <h1>Alloc Chat</h1>
-    </div>
+      <!-- Paweł: Zmieniłem "localhost:8000" na "/"
+                  Jak wrzucimy server do sieci, to wtedy będzie on miał
+                  własną domenę, a nie "localhost"...
+                  "/" mówi serwerowi, że ma szukać stronę "localhost:8000/"
+                  co w tym przypadku niczego nie zmienia...
+                  Analogicznie gdybyś dał "/kappa", serwer by przekierował cię
+                  na "localhost:8000/kappa"
+      -->
+      <a href="/" id="back">Back</a>
+      <!-- Paweł: może tutaj damy nazwę użytkownika z którym gadamy? -->
+      <h1>User</h1>
       <div class="content"></div>
       <br>
       <textarea placeholder="Write a message..."></textarea>

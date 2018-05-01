@@ -1,30 +1,47 @@
 textarea{
   resize: none;
-  border-color: #AAA;
-  border-style: solid;
-  border-width: thin;
+  border: #AAA solid thin;
   width: 100%;
 }
 div.content{
   height: 450px;
   width: 100%;
-  border: solid 1px;
+  /* Paweł: usunąłem border bo ble */
+  border: none;
   background: grey;
 }
 div#container{
-  border: solid 1px;
+  /* Paweł: usunąłem border bo ble */
+  border: none;
   width: 100%;
   background: orange;
-}
-h1{
   text-align: center;
-  width: 200px
-  float: center;
 }
-div#back{
+a#back{
   width: 100px;
-  float: left
+  float: left;
+  /* Paweł: inna czcionka i inny kolor */
+  font-family: Lato;
+  color: brown;
+  /* Paweł: Długość animacji przy najechaniu na przycisk */
+  transition: 300ms;
+}
+/* Paweł: zróbmy, żeby coś odjechanego się działo jak najedziemy na "back" */
+a#back:hover{
+  /* Paweł: powiększ 1.1 razy */
+  transform: scale(1.1);
+}
+
+h1 {
+  /* Paweł: Let's add some font! */
+  font-family: Lato;
 }
 a{
   text-decoration: none;
+}
+
+/* Paweł: Umożliwia korzystanie z czcionki "Lato" */
+@font-face {
+  src: url("arts/lato.ttf"); /* Paweł: cieżka do czcionki */
+  font-family: Lato; /* Paweł: jak chcę nazwać czcionkę */
 }
