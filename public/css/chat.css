@@ -8,13 +8,13 @@ div.content{
   width: 100%;
   /* Paweł: usunąłem border bo ble */
   border: none;
-  background: grey;
+  background: #333333;
 }
 div#container{
   /* Paweł: usunąłem border bo ble */
   border: none;
   width: 100%;
-  background: orange;
+  background: #FF691F;
   text-align: center;
 }
 a#back{
@@ -22,7 +22,7 @@ a#back{
   float: left;
   /* Paweł: inna czcionka i inny kolor */
   font-family: Lato;
-  color: brown;
+  color: #333333;
   /* Paweł: Długość animacji przy najechaniu na przycisk */
   transition: 300ms;
 }
