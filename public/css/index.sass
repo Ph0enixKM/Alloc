@@ -1,0 +1,106 @@
+body
+  margin: 0
+  overflow: hidden
+  user-select: none
+
+#blurred-bg
+  width: 120vw
+  height: 120vh
+  background-image: url("/arts/bg.png")
+  background-position: center
+  background-size: cover
+  filter: blur(5px)
+  transform: translate(-10vw, -10vh)
+
+#container
+  position: absolute
+  top: 0
+  left: 0
+  width: 100vw
+  height: 100vh
+  background-color: rgba(22,22,22,0.5)
+  display: flex
+
+  #about
+    flex: 1
+    #centered
+      display: inline-block
+      position: relative
+      top: 50%
+      left: 50%
+      transform: translate(-50%,-50%)
+      text-align: center
+      #logo
+        display: inline-block
+        width: 10vw
+        height: 10vw
+        background-image: url("/arts/logo.png")
+        background-repeat: no-repeat
+        background-size: cover
+        border-radius: 50%
+        box-shadow: 0 0 20px black
+      p
+        color: white
+        font-family: Pizza, Verdana, sans-serif
+        font-size: 50px
+        text-shadow: 0 0 10px black
+        background-color: #333
+        padding: 20px
+        border-radius: 20px
+        box-shadow: 0 0 50px black
+
+
+  #form
+    flex: 1
+    #centered
+      width: 500px
+      display: inline-block
+      background-color: #222
+      padding: 20px
+      border-radius: 20px
+      position: relative
+      top: 50%
+      left: 50%
+      transform: translate(-50%,-50%)
+      box-shadow: 0 0 100px 10px black
+      form
+        text-align: center
+        label
+          display: inline-block
+          font-family: Lato
+          color: white
+          font-size: 30px
+          margin-bottom: 10px
+        input
+          padding: 5px
+          font-size: 18px
+          margin-top: 15px
+          margin-bottom: 15px
+          width: 480px
+          display: block
+          background-color: #333
+          border: none
+          outline: none
+          color: white
+          transition: 200ms
+          &:hover
+            background-color: #2a2a2a
+          &::selection
+            background-color: #FF5729
+          &[type="submit"]
+            margin-bottom: 0
+            padding: 10px
+            display: inline-block
+            width: auto
+            cursor: pointer
+            border-radius: 5px
+
+
+
+@font-face
+  src: url("/arts/lato.ttf")
+  font-family: Lato
+
+@font-face
+  src: url("/arts/panpizza.ttf")
+  font-family: Pizza

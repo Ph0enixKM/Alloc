@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  user-select: none;
+}
+
+#blurred-bg {
+  width: 120vw;
+  height: 120vh;
+  background-image: url("/arts/bg.png");
+  background-position: center;
+  background-size: cover;
+  filter: blur(5px);
+  transform: translate(-10vw, -10vh);
+}
+
+#container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(22, 22, 22, 0.5);
+  display: flex;
+}
+
+#container #about {
+  flex: 1;
+}
+
+#container #about #centered {
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#container #about #centered #logo {
+  display: inline-block;
+  width: 10vw;
+  height: 10vw;
+  background-image: url("/arts/logo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 20px black;
+}
+
+#container #about #centered p {
+  color: white;
+  font-family: Pizza, Verdana, sans-serif;
+  font-size: 50px;
+  text-shadow: 0 0 10px black;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 50px black;
+}
+
+#container #form {
+  flex: 1;
+}
+
+#container #form #centered {
+  width: 500px;
+  display: inline-block;
+  background-color: #222;
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 100px 10px black;
+}
+
+#container #form #centered form {
+  text-align: center;
+}
+
+#container #form #centered form label {
+  display: inline-block;
+  font-family: Lato;
+  color: white;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+#container #form #centered form input {
+  padding: 5px;
+  font-size: 18px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 480px;
+  display: block;
+  background-color: #333;
+  border: none;
+  outline: none;
+  color: white;
+  transition: 200ms;
+}
+
+#container #form #centered form input:hover {
+  background-color: #2a2a2a;
+}
+
+#container #form #centered form input::selection {
+  background-color: #FF5729;
+}
+
+#container #form #centered form input[type="submit"] {
+  margin-bottom: 0;
+  padding: 10px;
+  display: inline-block;
+  width: auto;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+@font-face {
+  src: url("/arts/lato.ttf");
+  font-family: Lato;
+}
+
+@font-face {
+  src: url("/arts/panpizza.ttf");
+  font-family: Pizza;
+}

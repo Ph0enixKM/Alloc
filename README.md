@@ -18,7 +18,7 @@ $ npm install
 After all you are allowed to run server
 
 ```bash
-npm start
+$ npm start
 ```
 
 The followinng poject is *copyrighted* by **Alloc Dev Team**

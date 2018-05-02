@@ -2,12 +2,32 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Alloc</title>
+    <link rel="stylesheet" href="css/index.css">
   </head>
   <body>
-    <!-- Chłopaki, zróbcie z tego świetny interface -->
-    <h1> <%= "Welcome to Alloc" %> </h1>
-    <a href="dashboard">Dashboard</a>
-    <a href="chat">Chat</a>
+    <div id="blurred-bg"></div>
+    <div id="container">
+      <div id="about">
+        <div id="centered">
+          <div id="logo"></div>
+          <p>Alloc is a new and better social media</p>
+        </div>
+
+      </div>
+      <div id="form">
+        <div id="centered">
+          <form action="/dashboard" method="get">
+            <label>Log In</label>
+            <input type="email" name="email" placeholder="Enter your email">
+            <input type="password" name="password" placeholder="Enter your password">
+            <input type="submit" value="Log In">
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- <a href="dashboard">Dashboard</a>
+    <a href="chat">Chat</a> -->
+    <script src="/js/index.js"></script>
   </body>
 </html>
