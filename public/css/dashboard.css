@@ -1,0 +1,133 @@
+/* Primer Font */
+@font-face {
+	font-family: "PrimerPrint-Regular";
+	src: url('../font/PrimerPrint-Regular.ttf');
+}
+/* Background */
+* {
+	margin: 0px;
+	padding: 0px;
+}
+/* It is a Menu Zone */
+.headerMenu {
+	background-color: #303030;
+	height: 38px;
+	border-bottom: 0px;
+	padding-left: auto;
+	padding-right: auto;
+	width: 100%;
+}
+#wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	width: 1000px;
+	padding-top: 4px;
+	padding-bottom: 0px;
+}
+/* Alloc Logo/Signet */
+.logo img {
+	width: 30px;
+	height: 30px;
+margin-left: -172px;
+}
+/* Menu Buttons */
+@media screen and (max-width: 1280px) {
+#menu {
+	background-image: url(../arts/menuHeader.png);
+	position: absolute;
+	top: 0px;
+	right: 450px;
+	height: 30px;
+	padding-top: 8px;
+	margin-right: 4%;
+}
+}
+@media screen and (min-width: 1280px) {
+#menu {
+	background-image: url(../arts/menuHeader.png);
+	position: absolute;
+	top: 0px;
+	right: 450px;
+	height: 30px;
+	padding-top: 8px;
+	margin-right: 10%;
+}
+}
+@media screen and (min-width: 1920px) {
+#menu {
+	background-image: url(../arts/menuHeader.png);
+	position: absolute;
+	top: 0px;
+	right: 450px;
+	height: 30px;
+	padding-top: 8px;
+	margin-right: 25%;
+}
+}
+#menu a {
+	color: #EAF5EC;
+	text-decoration: none;
+	font-size: 18px;
+	font-family: PrimerPrint-Regular;
+	background-image: url(../arts/menuHeader.png);
+	background-repeat: no-repeat;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#menu a:hover {
+	color: #FF5729;
+	background-image: url(../arts/menuHeader_mouseOver.png);
+}
+@media screen and (max-width: 1280px) {
+#friends a {
+	background-image: url(../arts/menuHeader.png);
+	position: absolute;
+	top: 0px;
+	right: -130px;
+	height: 30px;
+	padding-top: 8px;
+	margin-right: 4%;
+}
+}
+@media screen and (min-width: 1280px) {
+#friends a {
+	background-image: url(../arts/menuHeader.png);
+	position: absolute;
+	top: 0px;
+	right: -130px;
+	height: 30px;
+	padding-top: 8px;
+	margin-right: 10%;
+}
+}
+@media screen and (min-width: 1920px) {
+#friends a {
+	background-image: url(../arts/menuHeader.png);
+	position: absolute;
+	top: 0px;
+	right: -130px;
+	height: 30px;
+	padding-top: 8px;
+	margin-right: 25%;
+}
+}
+#friends a {
+	color: #EAF5EC;
+	text-decoration: none;
+	font-size: 18px;
+	font-family: PrimerPrint-Regular;
+	background-image: url(../arts/menuHeader.png);
+	background-repeat: no-repeat;
+	padding-top: 8px;
+	padding-bottom: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#friends a:hover {
+	color: #FF5729;
+	background-image: url(../arts/menuHeader_mouseOver.png);
+}
+/* End of Menu Buttons */
