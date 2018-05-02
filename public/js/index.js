@@ -23,3 +23,20 @@ window.addEventListener('mousemove', e => {
     -base[1] + vector[1] + 'px'
   })`
 })
+// Login / Register button switch
+let logReg = document.querySelector('#switch')
+let login = document.querySelector('#login')
+let register = document.querySelector('#register')
+logReg.login = true
+logReg.addEventListener('click', () => {
+  logReg.login = !logReg.login
+  if (logReg.login) {
+    logReg.innerHTML = 'Create Account'
+    login.style.display = 'inline-block'
+    register.style.display = 'none'
+  } else {
+    logReg.innerHTML = 'Log in'
+    login.style.display = 'none'
+    register.style.display = 'inline-block'
+  }
+})

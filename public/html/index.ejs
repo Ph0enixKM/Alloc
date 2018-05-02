@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Alloc</title>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="/css/index.css">
   </head>
   <body>
     <div id="blurred-bg"></div>
@@ -17,12 +17,33 @@
       </div>
       <div id="form">
         <div id="centered">
-          <form action="/dashboard" method="get">
-            <label>Log In</label>
-            <input type="email" name="email" placeholder="Enter your email">
-            <input type="password" name="password" placeholder="Enter your password">
-            <input type="submit" value="Log In">
-          </form>
+          <% if (error) { %>
+             <span id="error"> <%= error %> </span>
+          <% } %>
+          <!-- <% if (success) { %>
+             <span id="success"> <%= success %> </span>
+          <% } %> -->
+          <br><br>
+
+          <span id="login">
+            <form action="/users/login" method="post">
+              <label>Log In</label>
+              <input type="email" name="email" placeholder="Enter your email">
+              <input type="password" name="password" placeholder="Enter your password">
+              <input type="submit" value="Log In">
+            </form>
+          </span>
+          <span id="register">
+            <form action="/users/register" method="post">
+              <label>Register</label>
+              <input type="email" name="email" placeholder="Enter your email">
+              <input type="password" name="password" placeholder="Enter your password">
+              <input type="password" name="password2" placeholder="Repeat your password">
+              <input type="submit" value="Create Account">
+            </form>
+          </span>
+          <br><br>
+          <span id="switch">Create Account</span>
         </div>
       </div>
     </div>
