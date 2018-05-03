@@ -20,22 +20,24 @@
           <% if (error) { %>
              <span id="error"> <%= error %> </span>
           <% } %>
-          <!-- <% if (success) { %>
-             <span id="success"> <%= success %> </span>
-          <% } %> -->
+          <% if (success_msg) { %>
+             <span id="success"> <%= success_msg %> </span>
+          <% } %>
           <br><br>
 
           <span id="login">
             <form action="/users/login" method="post">
               <label>Log In</label>
-              <input type="email" name="email" placeholder="Enter your email">
+              <input type="email" name="username" placeholder="Enter your email">
               <input type="password" name="password" placeholder="Enter your password">
               <input type="submit" value="Log In">
             </form>
           </span>
           <span id="register">
             <form action="/users/register" method="post">
-              <label>Register</label>
+              <label>Register</label><br>
+              <input type="text" name="fname" placeholder="First name">
+              <input type="text" name="lname" placeholder="Last name">
               <input type="email" name="email" placeholder="Enter your email">
               <input type="password" name="password" placeholder="Enter your password">
               <input type="password" name="password2" placeholder="Repeat your password">

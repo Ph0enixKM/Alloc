@@ -8,9 +8,9 @@ import passport from 'passport'
 import passportLocal from 'passport-local'
 import mongo from 'mongodb'
 import mongoose from 'mongoose'
-const localStrategy = passportLocal.Strategy
+const LocalStrategy = passportLocal.Strategy
 
-mongoose.connect('mongodb://localhost/loginapp')
+mongoose.connect('mongodb://localhost/alloc')
 let db = mongoose.connection
 
 // Modules

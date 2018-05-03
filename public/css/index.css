@@ -100,7 +100,7 @@ body {
   border-radius: 10px;
 }
 
-#container #form #centered #error {
+#container #form #centered #success {
   font-size: 20px;
   color: green;
   font-family: Lato;
@@ -120,7 +120,7 @@ body {
   font-size: 18px;
   margin-top: 15px;
   margin-bottom: 15px;
-  width: 480px;
+  width: 470px;
   display: block;
   background-color: #333;
   border: none;
@@ -144,6 +144,13 @@ body {
   width: auto;
   cursor: pointer;
   border-radius: 5px;
+}
+
+#container #form #centered form input[name="fname"], #container #form #centered form [name="lname"] {
+  display: inline-block;
+  width: 220px;
+  margin-right: 15px;
+  margin-bottom: 0;
 }
 
 @font-face {
