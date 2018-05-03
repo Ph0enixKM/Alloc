@@ -10,7 +10,7 @@ import mongo from 'mongodb'
 import mongoose from 'mongoose'
 const LocalStrategy = passportLocal.Strategy
 
-mongoose.connect('mongodb://localhost/alloc')
+mongoose.connect('mongodb://00alloc00:01VerySafePassword10@ds111370.mlab.com:11370/alloc')
 let db = mongoose.connection
 
 // Modules
@@ -46,6 +46,7 @@ app.use((req, res, next) => {
   res.locals.success_msg = req.flash('success_msg')
   res.locals.error_msg = req.flash('error_msg')
   res.locals.error = req.flash('error')
+  res.locals.user = req.user || null
   next()
 })
 

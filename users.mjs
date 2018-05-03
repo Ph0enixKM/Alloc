@@ -41,7 +41,7 @@ passport.use(new LocalStrategy((email, password, done) => {
   User.getUserByEmail(email, (err, user) => {
     if (err) throw err
     if (!user) {
-      return done(null, false, {message: 'Invalid Email'})
+      return done(null, false, {message: 'Invalid Email, such user doesn\'t exist'})
     }
     User.comparePassword(password, user.password, (err, isMatch) => {
       if (err) throw err
@@ -70,6 +70,11 @@ router.post('/login', passport.authenticate('local', {
   failureFlash : true
 }), (req, res) => {
   res.redirect('/')
+})
+router.get('/logout', (req, res) => {
+  req.logout()
+  req.flash('success_msg', "You are Logged out")
+  res.redirect("/users/login")
 })
 
 export default router

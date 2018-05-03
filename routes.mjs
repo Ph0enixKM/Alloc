@@ -1,8 +1,11 @@
 import express from 'express'
 const router = express.Router()
 
-router.get("/", (req, res) => {
-  res.render('index')
+router.get('/', (req, res) => {
+  if (req.user)
+    res.redirect('/dashboard')
+  else
+    res.render('index')
 })
 
 router.get("/chat", (req, res) => {
