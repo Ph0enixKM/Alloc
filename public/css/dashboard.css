@@ -1,7 +1,7 @@
 /* Primer Font */
 @font-face {
 	font-family: "PrimerPrint-Regular";
-	src: url('../arts/PrimerPrint-Regular.ttf');
+	src: url('/arts/PrimerPrint-Regular.ttf');
 }
 /* Background */
 body {

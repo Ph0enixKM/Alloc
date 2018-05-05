@@ -8,7 +8,6 @@ import passport from 'passport'
 import passportLocal from 'passport-local'
 import mongo from 'mongodb'
 import mongoose from 'mongoose'
-const LocalStrategy = passportLocal.Strategy
 
 mongoose.connect('mongodb://00alloc00:01VerySafePassword10@ds111370.mlab.com:11370/alloc')
 let db = mongoose.connection
@@ -16,8 +15,10 @@ let db = mongoose.connection
 // Modules
 import routes from './routes.mjs'
 import users from './users.mjs'
+import chat from './chat.mjs'
 
 const app = express()
+const LocalStrategy = passportLocal.Strategy
 app.use(express.static(process.cwd() + '/public'))
 
 // Set View Engine to be EJS
@@ -53,5 +54,4 @@ app.use((req, res, next) => {
 app.use('/', routes)
 app.use('/users', users)
 
-// Listen to port 8000
-app.listen(8000, () => console.log("Server started on port 8000"))
+chat(app)

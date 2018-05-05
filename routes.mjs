@@ -1,4 +1,5 @@
 import express from 'express'
+import _ from 'lodash'
 const router = express.Router()
 
 router.get('/', (req, res) => {
@@ -13,7 +14,10 @@ router.get("/chat", (req, res) => {
 })
 
 router.get("/dashboard", (req, res) => {
-  res.render('dashboard')
+  if (req.user)
+    res.render('dashboard', _.pick(req.user, ['fname','lname','email']) )
+  else
+    res.redirect('/users/login')
 })
 
 export default router

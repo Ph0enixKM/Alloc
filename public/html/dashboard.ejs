@@ -3,25 +3,49 @@
   <head>
     <meta charset="utf-8">
     <title>Alloc</title>
-    <link rel="stylesheet" type="text/css" href="./css/dashboard.css" />
+    <link rel="stylesheet" type="text/css" href="/css/dashboard.css" />
+    <!-- <script src="/socket.io/socket.io.js"></script> -->
+    <script src="http://localhost:8000/socket.io/socket.io.js"></script>
   </head>
   <body>
-    <!-- It is a Menu Zone -->
+    <!-- Start of Menu Zone -->
     <div class="headerMenu">
       <!-- Alloc Logo/Signet -->
   		<div id="settings">
-        <a href="#" />SETTINGS</a>
+        <a href="#"/>SETTINGS</a>
       </div>
       <!-- Menu Buttons -->
       <div id="center">
-        <a href="#" />DASHBOARD</a>
-        <img src="./arts/alloclogo.png" />
-        <a href="#" />EXPLORE</a>
+        <a href="#"/>DASHBOARD</a>
+        <img src="/arts/alloclogo.png" />
+        <a href="#"/>EXPLORE</a>
       </div>
       <div id="friends">
-        <a href="#" />FRIENDS</a>
+        <a href="#"/>FRIENDS</a>
       </div>
     </div>
-    <!-- End Of Menu Buttons -->
+    <!-- End Of Menu Zone -->
+
+    <!-- Start of Dashboard Zone -->
+    <div class="dashboard"></div>
+    <!-- End of Dashboard Zone -->
+
+    <!-- Start of Chat Zone -->
+    <div class="chat">
+      <div class="chat-output"></div>
+      <textarea class="chat-input"></textarea>
+    </div>
+    <!-- End of Chat Zone -->
+
+    <!-- JavaScripts Zone  -->
+    <script>
+    // Variables taken from server
+      window.user = {
+        fname : '<%= fname %>',
+        lname : '<%= lname %>',
+        email : '<%= email %>'
+      }
+    </script>
+    <script src="/js/chat.js"></script>
   </body>
 </html>
