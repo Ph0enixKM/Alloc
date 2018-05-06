@@ -10,9 +10,10 @@
     if (data.length) {
       for (let mess of data) {
         let message = document.createElement('div')
-        message.className = 'chat message'
-        message.innerText = `${mess.name}: ${mess.message}`
-        output.appendChild(message)
+          message.className = (mess.name == user.fname) ? 'dymke-me' : 'dymke-other'
+          message.innerText = `${mess.name}: ${mess.message}`
+          output.appendChild(message)
+          message.outerHTML = '<div class="dymke">' + message.outerHTML + '</div>'
       }
     }
   })

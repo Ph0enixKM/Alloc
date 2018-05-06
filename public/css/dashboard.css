@@ -105,3 +105,51 @@ body {
 	background-color: #333;
 }
 /* End of Menu Buttons */
+
+/* start of chat zone*/
+	textarea{
+		resize: none;
+		font-family: PrimerPrint-Regular;
+		width: 100%;
+		padding: 0px;
+		border: none;
+		border-top: 2px dashed #FF5729;
+		margin: 0;
+		background-color: #383838;
+		color: #EAF5EC;
+	}
+	div.chat{
+		height: 150px;
+		margin-top: 27%;
+		overflow-y: scroll;
+		background: #303030;
+		width: 500px;
+	}
+	div.dymke-other{
+		margin: 5px 0px 5px 8px;
+		padding: 8px;
+		background: #FF5729;
+		display: inline-block;
+		border-radius: 25px;
+		color: #EAF5EC;
+		font-family: PrimerPrint-Regular;
+		max-width: 400px;
+		word-wrap: break-word;
+		float: left;
+		}
+		div.dymke-me{
+			margin: 5px 8px 5px 0px;
+			padding: 8px;
+			background: #EAF5EC;
+			display: inline-block;
+			border-radius: 25px;
+			color: #303030;
+			font-family: PrimerPrint-Regular;
+			max-width: 400px;
+			word-wrap: break-word;
+			float: right;
+			}
+			.dymke{
+				clear: both;
+			}
+/* end of chat zone*/
