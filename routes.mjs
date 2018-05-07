@@ -9,8 +9,8 @@ router.get('/', (req, res) => {
     res.render('index')
 })
 
-router.get("/chat", (req, res) => {
-  res.render('chat')
+router.get("/user", (req, res) => {
+  res.render('user')
 })
 
 router.get("/dashboard", (req, res) => {
