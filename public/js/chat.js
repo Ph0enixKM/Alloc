@@ -14,6 +14,7 @@
           message.innerText = `${mess.name}: ${mess.message}`
           output.appendChild(message)
           message.outerHTML = '<div class="dymke">' + message.outerHTML + '</div>'
+          output.scrollTop = output.scrollHeight
       }
     }
   })

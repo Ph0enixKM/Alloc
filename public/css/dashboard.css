@@ -70,20 +70,15 @@ body {
 #center img {
 	width: 52px;
 	height: 52px;
-	/* Paweł: Dodałem cień do tego zdjęcia, żeby dodać głębie */
 	filter: drop-shadow(0 0 5px black);
 }
 #center a:hover {
 	color: #FF5729;
 	background-color: #333;
 }
-/* Paweł: wywaliłem te "media" bo zrobię taką sztuczkę,
-	 że zawsze tam będzie gdzie trzeba */
 #friends a {
 	color: #EAF5EC;
 	background-color: #303030;
-
-	/* Paweł: Setting Position */
 	display: inline-block;
 	position: absolute;
 	top: 0px;
@@ -91,12 +86,10 @@ body {
 	transform: translate(-100%, 0);
 
 	height: 22px;
-	/* padding-top: 8px; */
 	margin-right: 4%;
 	text-decoration: none;
 	font-size: 18px;
 	font-family: PrimerPrint-Regular;
-	/* Paweł: Zamiast padding: top, right, bottom, left */
 	padding: 8px 10px 0px	 10px;
 	transition: 300ms;
 }
@@ -107,49 +100,58 @@ body {
 /* End of Menu Buttons */
 
 /* start of chat zone*/
-	textarea{
-		resize: none;
-		font-family: PrimerPrint-Regular;
-		width: 100%;
-		padding: 0px;
-		border: none;
-		border-top: 2px dashed #FF5729;
-		margin: 0;
-		background-color: #383838;
-		color: #EAF5EC;
-	}
-	div.chat{
-		height: 150px;
-		margin-top: 27%;
-		overflow-y: scroll;
-		background: #303030;
-		width: 500px;
-	}
-	div.dymke-other{
-		margin: 5px 0px 5px 8px;
-		padding: 8px;
-		background: #FF5729;
-		display: inline-block;
-		border-radius: 25px;
-		color: #EAF5EC;
-		font-family: PrimerPrint-Regular;
-		max-width: 400px;
-		word-wrap: break-word;
-		float: left;
-		}
-		div.dymke-me{
-			margin: 5px 8px 5px 0px;
-			padding: 8px;
-			background: #EAF5EC;
-			display: inline-block;
-			border-radius: 25px;
-			color: #303030;
-			font-family: PrimerPrint-Regular;
-			max-width: 400px;
-			word-wrap: break-word;
-			float: right;
-			}
-			.dymke{
-				clear: both;
-			}
+textarea{
+	resize: none;
+	font-family: PrimerPrint-Regular;
+	width: 96%;
+	height: 30px;
+	padding: 2%;
+	border: none;
+	border-top: 2px dashed #FF5729;
+	margin: 0;
+	background-color: #383838;
+	color: #EAF5EC;
+}
+div.chat {
+	border-top: 10px solid #222;
+}
+div.chat-output{
+	/* display: inline-block; */
+	height: 200px;
+	overflow: auto;
+	overflow-y: scroll;
+	background: #303030;
+	width: 100%;
+	resize: vertical;
+}
+div.dymke-other{
+	margin: 5px 0px 5px 8px;
+	padding: 8px;
+	background: #FF5729;
+	display: inline-block;
+	border-radius: 25px;
+	color: #EAF5EC;
+	font-family: PrimerPrint-Regular;
+	max-width: 400px;
+	word-wrap: break-word;
+	float: left;
+}
+div.dymke-me{
+	margin: 5px 8px 5px 0px;
+	padding: 8px;
+	background: #EAF5EC;
+	display: inline-block;
+	border-radius: 25px;
+	color: #303030;
+	font-family: PrimerPrint-Regular;
+	max-width: 400px;
+	word-wrap: break-word;
+	float: right;
+}
+.dymke{
+	clear: both;
+}
 /* end of chat zone*/
+.dashboard{
+	height: 450px;
+}
