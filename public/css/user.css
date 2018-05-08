@@ -1,0 +1,108 @@
+/* kopia z dashboard.css bo nie działało */
+/* Primer Font */
+@font-face {
+	font-family: "PrimerPrint-Regular";
+	src: url('/arts/PrimerPrint-Regular.ttf');
+}
+/* Background */
+body {
+	margin: 0px;
+	padding: 0px;
+}
+/* It is a Menu Zone */
+.headerMenu {
+	background-color: #303030;
+	height: 30px;
+	border-bottom: 0px;
+	padding-left: auto;
+	padding-right: auto;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	padding-top: 4px;
+	padding-bottom: 0px;
+}
+#settings a {
+	color: #EAF5EC;
+	text-decoration: none;
+	font-size: 18px;
+	font-family: PrimerPrint-Regular;
+	background-color: #303030;
+	background-repeat: no-repeat;
+	padding: 8px 10px 0 10px;
+	transition: 300ms;
+}
+#settings a:hover{
+	color: #FF5729;
+	background-color: #333;
+}
+#settings {
+	background-color: #303030;
+	display: inline-block;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 22px;
+	padding-top: 8px;
+}
+/* Menu Buttons */
+#center {
+	background-color: #303030;
+	position: absolute;
+	top: 0px;
+	left	: 50%;
+	transform: translate(-50%, 0);
+	height: 22px;
+	padding-top: 8px;
+}
+#center a {
+	color: #EAF5EC;
+	text-decoration: none;
+	font-size: 18px;
+	font-family: PrimerPrint-Regular;
+	background-color: #303030;
+	background-repeat: no-repeat;
+	padding: 8px 10px 0 10px;
+	transition: 300ms;
+	vertical-align: top;
+}
+/* Alloc Logo/Signet */
+#center img {
+	width: 52px;
+	height: 52px;
+	filter: drop-shadow(0 0 5px black);
+}
+#center a:hover {
+	color: #FF5729;
+	background-color: #333;
+}
+#friends a {
+	color: #EAF5EC;
+	background-color: #303030;
+	display: inline-block;
+	position: absolute;
+	top: 0px;
+	left: 100%;
+	transform: translate(-100%, 0);
+
+	height: 22px;
+	margin-right: 4%;
+	text-decoration: none;
+	font-size: 18px;
+	font-family: PrimerPrint-Regular;
+	padding: 8px 10px 0px	 10px;
+	transition: 300ms;
+}
+#friends a:hover {
+	color: #FF5729;
+	background-color: #333;
+}
+/* End of Menu Buttons */
+
+/* start of profile */
+div#container{
+  height: 100vh;
+  background-color: #303030;
+}
+/* end of profile */
