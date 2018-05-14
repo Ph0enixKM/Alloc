@@ -105,4 +105,38 @@ div#container{
   height: 100vh;
   background-color: #303030;
 }
+div.background{
+	display: inline-block;
+	height: 42%;
+	width: 100%;
+	background-image: url("/arts/background.png");
+}
+div.profile{
+	/* musze tu jakos wcisnac border by nie zlewalo sie z tlem przypadkiem */
+	position: relative;
+	display: inline-block;
+	margin-left: 50%;
+	margin-top: 12%;
+	transform: translate(-50%, -12%);
+	width: 200px;
+	height: 200px;
+	border-radius: 9001px;
+	background-image: url("/arts/profilepic.png");
+}
+div.pics{
+	float: left;
+	background-color: #444;
+	width: 400px;
+	height: 80px;
+	border-radius: 3%;
+	margin-left: 10%;
+}
+div.post{
+	float: right;
+	background-color: #444;
+	width: 600px;
+	height: 400px;
+	margin-right: 10%;
+	border-radius: 3%;
+}
 /* end of profile */
