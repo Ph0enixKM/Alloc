@@ -8,6 +8,7 @@
 body {
 	margin: 0px;
 	padding: 0px;
+	background-color: #303030;
 }
 /* It is a Menu Zone */
 .headerMenu {
@@ -103,11 +104,10 @@ body {
 /* start of profile */
 div#container{
   height: 100vh;
-  background-color: #303030;
 }
 div.background{
 	display: inline-block;
-	height: 42%;
+	height: 250px;
 	width: 100%;
 	background-image: url("/arts/background.png");
 }
@@ -115,28 +115,95 @@ div.profile{
 	/* musze tu jakos wcisnac border by nie zlewalo sie z tlem przypadkiem */
 	position: relative;
 	display: inline-block;
+	float: left;
 	margin-left: 50%;
-	margin-top: 12%;
-	transform: translate(-50%, -12%);
+	margin-top: 125px;
+	transform: translate(-50%);
 	width: 200px;
 	height: 200px;
 	border-radius: 9001px;
 	background-image: url("/arts/profilepic.png");
 }
-div.pics{
+div.friending{
+	position: relative;
+	display: inline-block;
+	background-color: #FF5729;
+	padding: 4px;
+	padding-left: 18px;
+	padding-right: 18px;
+	color: #EAF5EC;
+	font-size: 18px;
+	font-family: PrimerPrint-Regular;
+	float: left;
+	border: none;
+	border-radius: 10px;
+	margin-left: 10px;
+	margin-top: 240px;
+}
+div.tabs{
+	float: left;
+	width: 400px;
+}
+div.things{
 	float: left;
 	background-color: #444;
 	width: 400px;
-	height: 80px;
-	border-radius: 3%;
+	height: 140px;
+	color: #EAF5EC;
+	font-size: 24px;
+	font-family: PrimerPrint-Regular;
+	border: none;
+	border-radius: 10px;
 	margin-left: 10%;
+	margin-top: 100px;
+	resize: none;
+}
+div.and{
+	float: left;
+	background-color: #444;
+	width: 400px;
+	height: 300px;
+	color: #EAF5EC;
+	font-size: 24px;
+	font-family: PrimerPrint-Regular;
+	border: none;
+	border-radius: 10px;
+	margin-left: 10%;
+	margin-top: 5px;
+	resize: none;
 }
 div.post{
-	float: right;
+	float: left;
 	background-color: #444;
 	width: 600px;
 	height: 400px;
-	margin-right: 10%;
+	margin-top: 100px;
+	margin-left: 10%;
 	border-radius: 3%;
+}
+p.cfriends{
+	border-bottom: 2px dashed #FF5729;
+	margin-top: 5px;
+	margin-left: 10px;
+}
+p.cphoto{
+	border-bottom: 2px dashed #FF5729;
+	margin-top: 5px;
+	margin-left: 10px;
+}
+div.postpic{
+	float: left;
+	margin: 10px;
+	width: 45px;
+	height: 45px;
+	border-radius: 9001px;
+	background-image: url("/arts/profilepic.png");
+}
+p.postname{
+	float: left;
+	margin: 10px;
+	color: #EAF5EC;
+	font-family: PrimerPrint-Regular;
+	font-size: 18px;
 }
 /* end of profile */
