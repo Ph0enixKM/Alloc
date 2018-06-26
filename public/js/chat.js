@@ -27,4 +27,27 @@
     }
   })
 
+  chat()
+
+  function chat () {
+    input.addEventListener('focus', () => {
+      input.style.border = '2px solid #FF5729'
+      input.setAttribute('focus', 1)
+    })
+    input.addEventListener('focusout', () => {
+      input.style.border = '2px dashed #444'
+      input.setAttribute('focus', 0)
+    })
+    input.addEventListener('mouseover', () => {
+      if (!+input.getAttribute('focus')) {
+        input.style.border = '2px dashed #555'
+      }
+    })
+    input.addEventListener('mouseout', () => {
+      if (!+input.getAttribute('focus')) {
+        input.style.border = '2px dashed #444'
+      }
+    })
+  }
+
 })()

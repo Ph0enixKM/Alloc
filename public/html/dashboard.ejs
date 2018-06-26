@@ -10,34 +10,45 @@
   <body>
     <!-- Start of Menu Zone -->
     <div class="headerMenu">
-      <!-- Alloc Logo/Signet -->
-  		<div id="settings">
-        <a href="#"/>SETTINGS</a>
-      </div>
-      <!-- Menu Buttons -->
       <div id="center">
-        <a href="#"/>DASHBOARD</a>
+        <a href="#">DASHBOARD</a>
         <img src="/arts/alloclogo.png" />
-        <a href="#"/>EXPLORE</a>
-      </div>
-      <div id="friends">
-        <a href="#"/>FRIENDS</a>
+        <a href="#">EXPLORE</a>
       </div>
     </div>
-    <!-- End Of Menu Zone -->
 
-    <!-- Start of Dashboard Zone -->
-    <div class="dashboard"></div>
-    <!-- End of Dashboard Zone -->
+    <div class="layout">
+      <div class="talks">
+        <div class="talk">
+          <div class="chat">
+            <span online>John</span>
+            <div class="chat-output"></div>
+          </div>
+          <div class="chat-text">
+            <textarea class="chat-input" placeholder="Write a message..."></textarea>
+          </div>
+        </div>
+        <ul class="friends">
+          <li online>Paweł Karaś</li>
+          <li>Remigiusz Stęclik</li>
+          <li>Jakub Zaremba</li>
+          <li online>Paweł Karaś</li>
+          <li>Remigiusz Stęclik</li>
+          <li>Jakub Zaremba</li>
+          <li online>Paweł Karaś</li>
+          <li>Remigiusz Stęclik</li>
+          <li>Jakub Zaremba</li>
+        </ul>
+        <input id="search" placeholder="Look up friend &#x1F50E;"/>
+      </div>
 
-    <!-- Start of Chat Zone -->
-    <div class="chat">
-      <div class="chat-output"></div>
+      <div id="main">
+        <div id="dashboard"></div>
+        <div id="panel"></div>
+      </div>
     </div>
-    <textarea class="chat-input" placeholder="Write a message..."></textarea>
-    <!-- End of Chat Zone -->
 
-    <!-- JavaScripts Zone  -->
+
     <script>
     // Variables taken from server
       window.user = {
